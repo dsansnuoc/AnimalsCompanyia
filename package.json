@@ -10,6 +10,7 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.13",
     "jquery": "^3.6.1",
     "jquery-ui-dist": "^1.13.2",
     "material-icons": "^1.12.1"
