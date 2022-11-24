@@ -4,71 +4,117 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  body {
-    background: #FFFFFA;
-    color: #000;
-  }
-  
-  header {
-    width: 100%;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
 
-  header nav {
+body {
+  background: #FFFFFA;
+  color: #000;
+}
+
+header {
+  width: 100%;
+}
+
+header nav {
   /*  margin: 20px auto; */
-    background: #0593b3;
-  }
+  background: #0593b3;
+}
 
 
-  header nav ul {
-    overflow: hidden;
-    list-style: none;
+header nav ul {
+  overflow: hidden;
+  list-style: none;
+}
+
+header nav ul li {
+  float: left;
+}
+
+header nav ul li a {
+  color: #fff;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+}
+
+header nav ul li a:visited {
+  color: #fff;
+
+}
+
+
+header nav ul li span {
+  margin-right: 10px;
+}
+
+header nav ul li a:hover {
+  background: #037E8C;
+}
+
+
+.mindex {
+  content: "";
+
+  width: 100%;
+  height: 87vh;
+
+  background-image: url("../img/animalees-de-compa.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* color: rgb(255, 255, 255); */
+  opacity: 1;
+  overflow: auto;
+  z-index: 1;
+}
+
+.menu_bar {
+  display: none;
+}
+
+.menu_bar .bt-menu {
+  display: block;
+  padding: 20px;
+  background: #0593b3;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#columna1,
+#columna2,
+#columna3 {
+  float: left;
+  width: 50%;
+}
+
+
+@media screen and (max-width:800px) {
+  header nav {
+    width: 80%;
+    height: 100%;
+    left: -100%;
+    margin: 0;
+    position: fixed;
   }
-  
+
   header nav ul li {
-    float: left;
-  }
-  
-  header nav ul li a {
-    color: #fff;
-    padding: 20px;
     display: block;
-    text-decoration: none;
-  }
-  
-  header nav ul li a:visited {
-    color: #fff;
-  
-  }
-  
-
-  header nav ul li span {
-    margin-right: 10px;
-  }
-  
-  header nav ul li a:hover {
-    background: #037E8C;
-  }
-
-
-  .mindex {
-    width: 100%;
-    height: 87vh;
-    background-image: url("../img/animalees-de-compa.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-   /* color: rgb(255, 255, 255); */
-    opacity: 1;
-    overflow: auto;  
+    float: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
   }
 
   .menu_bar {
-    display: none;
+    display: block;
+    width: 100%;
+    background: #ccc;
   }
 
   .menu_bar .bt-menu {
@@ -84,69 +130,84 @@
     box-sizing: border-box;
   }
 
-  @media screen and (max-width:800px) {
-    header nav {
-      width: 80%;
-      height: 100%;
-      left: -100%;
-      margin: 0;
-      position: fixed;
-    }
-  
-    header nav ul li {
-      display: block;
-      float: none;
-      border-bottom: 1px solid rgba(255, 255, 255, .3);
-    }
-  
-    .menu_bar {
-      display: block;
-      width: 100%;
-      background: #ccc;
-    }
-  
-    .menu_bar .bt-menu {
-      display: block;
-      padding: 20px;
-      background: #0593b3;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 25px;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-    }
-  
-    .menu_bar span {
-      float: left;
-      font-size: 40px;
-    }
-  
+  .menu_bar span {
+    float: left;
+    font-size: 40px;
   }
 
-
-  h1 {
-    font-size: 4vw;
-    text-align: center;
-    font-weight: bold;
+  #columna1,
+  #columna2,
+  .columnav1,
+  .columnav2 {
+    float: left;
+    width: 50%;
   }
 
-  .pStyle {
-    font-size: 2vw;
-    text-align: center;
-  }
-
-  main ul li{
-    font-size: 2vw;
-    text-align: center;
-  }
+}
 
 
-  .divCategories {
+h1 {
+  font-size: 4vw;
+  text-align: center;
+  font-weight: bold;
+}
 
-    display: inline-block;
+.pStyle {
+  font-size: 2vw;
+  text-align: center;
+}
+
+main ul li {
+  font-size: 2vw;
+  text-align: center;
+}
+
+
+.divCategories {
+
+  display: inline-block;
+  width: 100%;
+  padding-top: 8vh;
+
+}
+
+/* Diseño para celulares */
+@media screen and (max-width: 799px) {
+
+  #columna1,
+  #columna2,
+  .columnav1,
+  .columnav2 {
+    float: none;
     width: 100%;
-    padding-top: 8vh;
-
   }
+}
+
+.contDetall {
+  display: inline-flexbox;
+  width: 100%;
+  height: 275px;
+}
+
+.imgSimptomes {
+  border-radius: 15px;
+  border: #000 solid 2px;
+  width: 30%;
+  opacity: 1;
+}
+
+.leftDiv {
+  float: left;
+}
+
+.txtTitulNoticia {
+  color: #000;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.txtTNoticia {
+  font-size: 18px;
+  color: rgba(0, 0, 0);
+  font-weight: 500;
+}
