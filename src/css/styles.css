@@ -255,3 +255,60 @@ main ul li {
   clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
   text-align: center;
 }
+
+
+#imageSvg {
+  stroke-dasharray: 210;
+  animation: draw 5s infinite;
+}
+
+
+
+svg {
+  height: 150px;
+  width: 210px;
+}
+
+svg path {
+  stroke-dashoffset: 210;
+  stroke-dasharray: 210;
+  animation: draw 10s forwards;
+}
+
+svg rect {
+  stroke-dashoffset: 210;
+  stroke-dasharray: 210;
+  animation: draw 15s forwards;
+}
+
+svg g {
+  fill-opacity: 0;
+  animation: fill-in 2s 10s forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-in {
+  to {
+    fill-opacity: 1;
+  }
+  
+}
+
+ol.none {
+  list-style-type: none;
+  margin-left: 15vh;
+}
+
+
+table {
+  width: 100%;
+}
+
+th, td {
+  width: 50%;
+}
