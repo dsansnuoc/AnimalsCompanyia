@@ -257,7 +257,6 @@ main ul li {
   text-align: center;
 }
 
-
 #imageSvg {
   stroke-dasharray: 210;
   animation: draw 5s infinite;
